@@ -24,13 +24,13 @@
 <!-- CONTEXTE DU PROJET -->
 ## Contexte_du_projet 
 
-"Afin de me perfectionner dans le langage C#, j'ai d�cid� de refaire le projet "VERS L'INFINI ET AU DELA (initialement en Python) en d'ajouter quelques fonctionnalit�s suppl�mentaires (galerie photos, reconnaissance physique branchement...)"  
+"Afin de me perfectionner dans le langage C#, j'ai décidé de refaire le projet "VERS L'INFINI ET AU DELA (initialement en Python) en d'ajouter quelques fonctionnalit�s suppl�mentaires (galerie photos, reconnaissance physique branchement...)"  
   
-Lors de jolies soir�es d'�t� il m'arrive de partir avec des amis admirer le ciel, � l'aide de mon Celestron 9.25 Fastar sur monture CGX GOTO.  
-Ce petit programme a pour but, � l'aide d'une interface graphique, d'envoyer une requ�te sur le site "https://api-adresse.data.gouv.fr" afin d'extraire les coordonn�es g�ographiques du lieu d'observation en question.  
-Notamment gr�ce � la latitude je pourrais facilement calibrer mon t�lescope.  
+Lors de jolies soirées d'été il m'arrive de partir avec des amis admirer le ciel, à l'aide de mon Celestron 9.25 Fastar sur monture CGX GOTO.  
+Ce petit programme a pour but, à l'aide d'une interface graphique, d'envoyer une requête sur le site "https://api-adresse.data.gouv.fr" afin d'extraire les coordonn�es g�ographiques du lieu d'observation en question.  
+Notamment gràce à la latitude je pourrais facilement calibrer mon télescope.  
 De plus la solution "VIEAD" est capable de reconnaitre le branchement de la monture CGX via les PORTSCOM et de lancer l'action souhait�e...  
-Ici la phrase culte de Toy Story : "Vers l'infini et au-del�!" ???????
+Ici la phrase culte de Toy Story : "Vers l'infini et au-delà!" 👨‍🚀🚀🤓
 
 ![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA/blob/main/windows/data/Capture.PNG?raw=true)
 
