@@ -1,7 +1,6 @@
 # VERS_LINFINI_ET_AU_DELA_CSHARP
 
-
-![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA_CSHARP/blob/main/data/3.jpg?raw=true)
+![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA_CSHARP/blob/main/data/result.gif?raw=true)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -49,5 +48,5 @@ Ici la phrase culte de Toy Story : "Vers l'infini et au-del�!" ???????
     ```sh
     VIEAD.exe
     ```
-![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA_CSHARP/blob/main/data/result.gif?raw=true)
-![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA_CSHARP/blob/main/data/final.JPG?raw=true)  
+
+![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA_CSHARP/blob/main/data/3.jpg?raw=true)
