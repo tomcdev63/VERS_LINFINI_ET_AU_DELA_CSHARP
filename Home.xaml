@@ -1,0 +1,104 @@
+﻿<Page x:Class="VIEAD.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VIEAD"
+      mc:Ignorable="d" 
+      d:DesignHeight="308" d:DesignWidth="600"
+      Background="White"
+      Title="Home">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Vers l'infini et au delà!"
+               FontWeight="ExtraBlack" FontSize="28"
+               Grid.Column="1" Grid.Row="1" Margin="-5,0,0,0" Grid.ColumnSpan="1"   
+               Background="Transparent" Foreground="#FF482464" />
+
+        <TextBlock Text="Choose your Telescope :"
+                   FontFamily="Segeo UI" FontWeight="Light" FontSize="16"
+                   Grid.Column="1" Grid.Row="3" Margin="0,15,0,0" Grid.ColumnSpan="1" />
+
+        <ComboBox x:Name="myComboBox" Grid.Column="1" Grid.Row="4" SelectedValuePath="Content"
+                  Grid.ColumnSpan="1" Margin="0,10,110,10" MaxWidth="290" Height="25">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="G:\TOMDEV\VERS_LINFINI_ET_AU_DELA_CSHARP\data\c9.jpg"
+                        Height="20" Width="20"/>
+                        <TextBlock Text=" " />
+                        <TextBlock Text="{Binding Brand}" />
+                        <TextBlock Text=" " />
+                        <TextBlock Text="{Binding Model}" />
+                        <TextBlock Text=" - " />
+                        <TextBlock Text="{Binding Carac}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <Image Grid.Column="1" Grid.RowSpan="8"
+               MinWidth="500" Margin="206,0,-116,-40"
+               Source="G:\TOMDEV\VERS_LINFINI_ET_AU_DELA_CSHARP\data\buzz.png" Grid.ColumnSpan="3"/>
+
+        <!--<TextBlock Text="Waiting to connect the telescope..."
+                   FontFamily="Segeo UI" FontWeight="Light" FontSize="16"
+                   Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2"
+                   Margin="0,0,0,0  " />-->
+
+             
+                   
+
+        <TextBlock Text="Choose your postal code to know your latitude :"
+                   FontFamily="Segeo UI" FontWeight="Light" FontSize="16"
+                   Grid.Column="1" Grid.Row="5" Margin="0,10,10,0" 
+                   />
+
+        <TextBox   x:Name="code_postal" Grid.Column="1" Grid.Row="6" Margin="0,10,210,10"
+                   Grid.ColumnSpan="1" Height="25" MaxWidth="300"/>
+
+        <Button    x:Name="submit_Button" Content="Check CP" 
+                   Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="1"
+                   Width="90"  Height="25" Margin="100,0,0,0" 
+                   Click="submitButton" Foreground="white">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FF8CC671" />
+                    <Setter Property="Cursor" Value="Hand" />
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button    x:Name="pict_Button" Content="Pictures" 
+                   Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="1"
+                   Width="90"  Height="25" Margin="300,0,0,0" 
+                   Click="pictButton" Foreground="White" Cursor="Hand">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#FF482464" />
+                    <Setter Property="Cursor" Value="Hand" />
+                </Style>
+            </Button.Style>
+        </Button>
+
+    </Grid>
+
+</Page>
