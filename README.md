@@ -1,7 +1,7 @@
 # VERS_LINFINI_ET_AU_DELA_CSHARP
 
 
-![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA_CSHARP/blob/main/data/3.JPG?raw=true)
+![Screenshot](https://github.com/tomcdev63/VERS_LINFINI_ET_AU_DELA_CSHARP/blob/main/data/3.jpg?raw=true)
 
 <!-- PROJECT LOGO -->
 <br />
