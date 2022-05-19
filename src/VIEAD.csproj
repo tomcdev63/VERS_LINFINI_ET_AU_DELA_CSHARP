@@ -29,10 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="wallpaper.png" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Page Update="Pictures.xaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Page>
