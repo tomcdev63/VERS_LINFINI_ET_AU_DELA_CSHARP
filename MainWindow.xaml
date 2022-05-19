@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VIEAD"
         mc:Ignorable="d" FontSize="18" FontFamily="Segeo UI" FontWeight="ExtraLight"
-        Title="WPF - VERS L'INIFINI ET AU DELA! - Celestron9.25 XLT Fastar CGX GOTO" 
+        Title="VERS L'INIFINI ET AU DELA! - WPF" 
         ResizeMode="NoResize"
         Height="310" Width="600"
         WindowStartupLocation="CenterScreen"
-        Loaded="OnLoad">
+        Loaded="OnLoad"
+        Icon="G:\TOMDEV\VERS_LINFINI_ET_AU_DELA_CSHARP\data\buzz.ico">
 
 
     <Grid>
