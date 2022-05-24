@@ -87,10 +87,10 @@ namespace VIEAD
                         {
 
                             Root? root = JsonSerializer.Deserialize<Root>(mycontent);
-                            MessageBox.Show("Information about the location of the observation : " +
-                                            $"\n\n- City : {root.features[2].properties.city} " +
-                                            $"\n- Longitude : {root.features[2].geometry.coordinates[0]} " +
-                                            $"\n- Latitude : {root.features[2].geometry.coordinates[1]}");
+                            MessageBox.Show($"Infos about the location of the observation ('{root.features[2].properties.city}') : " +
+                                            $"\n\n- Longitude : {root.features[2].geometry.coordinates[0]} " +
+                                            $"\n- Latitude : {root.features[2].geometry.coordinates[1]}",
+                                            $"Geometry coordinates of '{root.features[2].properties.city}'");
                         }
 
                         else

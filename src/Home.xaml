@@ -28,17 +28,22 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Label Content="Vers l'infini et au delà!"
+        <Label Content="Vers l'infini et au delà! - V2.0"
                FontWeight="ExtraBlack" FontSize="28"
                Grid.Column="1" Grid.Row="1" Margin="-5,0,0,0" Grid.ColumnSpan="1"   
                Background="Transparent" Foreground="#FF482464" />
 
+
+        <TextBlock Text="Plug in your telescope to access the photo gallery and other features!"
+                   FontFamily="Segeo UI" FontWeight="Medium" FontSize="10" Foreground="#FF482464"
+                   Grid.Column="1" Grid.Row="1" Margin="0,40,0,0" Grid.ColumnSpan="1" />
+
         <TextBlock Text="Details of telescopes  :"
                    FontFamily="Segeo UI" FontWeight="Light" FontSize="16"
-                   Grid.Column="1" Grid.Row="2" Margin="0,10,0,0" Grid.ColumnSpan="1" />
+                   Grid.Column="1" Grid.Row="2" Margin="0,20,0,0" Grid.ColumnSpan="1" />
 
         <ComboBox x:Name="myComboBox" Grid.Column="1" Grid.Row="3" SelectedValuePath="Content"
-                  Grid.ColumnSpan="1" Margin="0,10,110,10" MaxWidth="290" Height="25">
+                  Grid.ColumnSpan="2" Margin="0,10,120,10" MinWidth="302" Height="25">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
