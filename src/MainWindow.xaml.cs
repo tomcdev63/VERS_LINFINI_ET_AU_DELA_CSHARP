@@ -35,11 +35,15 @@ namespace VIEAD
                 await Task.Delay(100);
                 List<string> ports = new List<string>(SerialPort.GetPortNames());
 
+                
+
                 switch (ports.Contains("COM8"))
                 {
                     case true:
                         if (celestron_connected == false)
                         {
+                            ((Home)Main.Content).myComboBox.SelectedItem = ((Home)Main.Content).myComboBox.Items[3];   /*selection du 9.25*/
+                            ((Home)Main.Content).pict_Button.IsEnabled = true;        /*avoir acces au bouton en home (changement d'était du bouton donnant accès aux photos*/
                             checkbox_connected.IsChecked = true;
                             celestron_connected = true;
                             Buzz_sound();
@@ -50,6 +54,7 @@ namespace VIEAD
                     case false:
                         if (celestron_connected == true)
                         {
+                            ((Home)Main.Content).pict_Button.IsEnabled = false;
                             checkbox_connected.IsChecked = false;
                             celestron_connected = false;
                             GoodBye_sound();

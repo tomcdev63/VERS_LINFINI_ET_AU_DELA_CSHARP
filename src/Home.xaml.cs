@@ -5,6 +5,7 @@ using System.Windows.Controls;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Text.Json;
+using System.Diagnostics;
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 //---------------------------------------------------------------------------------------------------------------------------------------
@@ -13,7 +14,8 @@ namespace VIEAD
 {
     public partial class Home : Page
     {
-
+        private const string PATH_CPWI = "C:/Program Files (x86)/Celestron/CPWI/CPWI.exe";
+        private const string PATH_STEALLARIUM = "C:/Program Files/Stellarium/stellarium.exe";
         private const string GLOBAL_DATA_URL = "https://api-adresse.data.gouv.fr/search/?q=postcode=";
         public List<Telescope> telescope = new List<Telescope>();
         public event EventHandler GoToPictures;
@@ -29,6 +31,33 @@ namespace VIEAD
             telescope.Add(new Telescope { Brand = "Celestron", Model = "C14", Carac = "D : 355mm, Lf : 3910mm, R : F/11" });
             myComboBox.ItemsSource = telescope;
 
+            pict_Button.IsEnabled = false;
+
+        }
+
+
+        //---------------------------------------------------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------------------------------------------------
+
+        //private void stellarium_Button(object sender, RoutedEventArgs e)
+        //{
+        //    Process.Start(PATH_STEALLARIUM);
+        //}
+
+
+        //private void CPWI_Button(object sender, RoutedEventArgs e)
+        //{
+        //    Process.Start(PATH_CPWI, code_postal.Text);
+        //}
+
+
+        //---------------------------------------------------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------------------------------------------------
+
+        private void pictButton(object sender, RoutedEventArgs e)
+        {
+            
+            this.NavigationService.Navigate(new Uri("Pictures.xaml", UriKind.Relative));
         }
 
         //---------------------------------------------------------------------------------------------------------------------------------------
@@ -38,6 +67,10 @@ namespace VIEAD
         {
             GetRequest(GLOBAL_DATA_URL, code_postal.Text);
         }
+
+        //---------------------------------------------------------------------------------------------------------------------------------------
+        //---------------------------------------------------------------------------------------------------------------------------------------
+
 
         async static void GetRequest(string url, string cp)
         {
@@ -71,16 +104,11 @@ namespace VIEAD
             }
         }
 
-        //---------------------------------------------------------------------------------------------------------------------------------------
-        //---------------------------------------------------------------------------------------------------------------------------------------
-
-        private void pictButton(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Uri("Pictures.xaml", UriKind.Relative));
-        }
 
         //---------------------------------------------------------------------------------------------------------------------------------------
         //---------------------------------------------------------------------------------------------------------------------------------------
+
+
     }
 }
 
